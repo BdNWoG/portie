@@ -42,7 +42,7 @@ export const BentoGridItem = ({
     return (
         <div
         className={cn(
-            "row-span-1 relative rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+            "row-span-1 relative rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
             className
         )} style={{
             background: 'rgb(4, 7, 29)', 
@@ -52,14 +52,14 @@ export const BentoGridItem = ({
         >
         <div className={`${id === 6} && 'flex justify-center h-full`}>
             <div className="h-full w-full absolute">
-            <img
-                src={img}
-                alt={img}
-                className={cn(
-                "object-cover object-center",
-                imgClassName
-                )}
-            />
+                <img
+                    src={img}
+                    alt={img}
+                    className={cn(
+                    "object-cover object-center",
+                    imgClassName
+                    )}
+                />
             </div>
             <div className={`absolute right-0 -bottom-5 ${id === 5 && 'w-full opacity-80'}`}>
                 {spareImg && <img
